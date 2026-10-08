@@ -6,8 +6,6 @@
 #define L_RIGHT 2
 #define BOTH 3
 
-CONFIG_ZMK_SLEEP=y
-CONFIG_ZMK_IDLE_SLEEP_TIMEOUT=900000
 
 / {
 	conditional_layers {
