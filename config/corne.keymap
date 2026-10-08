@@ -2,8 +2,8 @@
 #include <dt-bindings/zmk/keys.h>
 
 #define BASE 0
-#define LEFT 1
-#define RIGHT 2
+#define L_LEFT 1
+#define L_RIGHT 2
 #define BOTH 3
 
 / {
@@ -11,7 +11,7 @@
 		compatible = "zmk,conditional-layers";
 
 		both_layer {
-			if-layers = <LEFT RIGHT>;
+			if-layers = <L_LEFT L_RIGHT>;
 			then-layer = <BOTH>;
 		};
 	};
@@ -25,25 +25,25 @@
 				&none  &kp A  &kp S  &kp D  &kp F  &kp G      &kp H  &kp J  &kp K      &kp L    &kp SEMI  &none
 				&none  &kp Z  &kp X  &kp C  &kp V  &kp B      &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &none
 
-				&kp LCTRL &mo LEFT  &kp SPACE      &kp RET  &mo RIGHT  &kp LSHIFT
+				&kp LCTRL &mo L_LEFT  &kp SPACE      &kp RET  &mo L_RIGHT  &kp LSHIFT
 			>;
 		};
 
 		left_layer {
 			bindings = <
 				&none  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5      &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &none
-				&none  &kb TAB &kb LSHIFT &trans  &kb PG_UP &kb PG_DN &kb APOS &kp LEFT &kp DOWN &kp UP &kp RIGHT &none
-				&none  &kb ESC &kb F1 &kb F2 &kb F3 &kb F4			&kb F5 &kb F6 &kb F7 &kb F8 &kb BSPC &none
+				&none  &kp TAB &kp LSHIFT &trans  &kp PG_UP &kp PG_DN &kp APOS &kp LEFT &kp DOWN &kp UP &kp RIGHT &none
+				&none  &kp ESC &kp F1 &kp F2 &kp F3 &kp F4			&kp F5 &kp F6 &kp F7 &kp F8 &kp BSPC &none
 
-				&kb LGUI &trans  &trans      &kb RALT &trans  &trans
+				&kp LGUI &trans  &trans      &kp RALT &trans  &trans
 			>;
 		};
 
 		right_layer {
 			bindings = <
 				&none  &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT      &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &none
-				&none  &kb GRAVE &trans    &trans     &trans    &trans         &kp MINUS  &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH  &none
-				&none  &kb TILDE &kb F9 &kb F10 &kb F11 &kb F12				&kp UNDER  &kp PLUS  &kp LBRC  &kp RBRC  &kp PIPE  &none
+				&none  &kp GRAVE &trans    &trans     &trans    &trans         &kp MINUS  &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH  &none
+				&none  &kp TILDE &kp F9 &kp F10 &kp F11 &kp F12				&kp UNDER  &kp PLUS  &kp LBRC  &kp RBRC  &kp PIPE  &none
 
 				&trans  &trans  &trans      &trans  &trans  &trans
 			>;
@@ -52,7 +52,7 @@
 		both_layer {
 			bindings = <
 				&none  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &none
-				&none  &kb CAPS &trans  &trans  &trans  &trans      &trans  &kp HOME &kp PG_DN &kp PG_UP &kp END &none
+				&none  &kp CAPS &trans  &trans  &trans  &trans      &trans  &kp HOME &kp PG_DN &kp PG_UP &kp END &none
 				&none  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp DEL &none
 
 				&trans  &trans  &trans      &trans  &trans  &trans
