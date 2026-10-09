@@ -7,9 +7,6 @@
 #define L_RIGHT 2
 #define BOTH 3
 
-&bt BT_SEL 0    // laptop
-&bt BT_SEL 1    // desktop
-
 / {
 	conditional_layers {
 		compatible = "zmk,conditional-layers";
