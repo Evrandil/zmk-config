@@ -46,7 +46,7 @@
 				&none  &kp GRAVE &trans    &trans     &trans    &trans         &kp MINUS  &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH  &none
 				&none  &kp TILDE &kp F9 &kp F10 &kp F11 &kp F12				&kp UNDER  &kp PLUS  &kp LBRC  &kp RBRC  &kp PIPE  &none
 
-				&trans  &trans  &trans      &kb RALT &trans  &trans
+				&trans  &trans  &trans      &kp RALT &trans  &trans
 			>;
 		};
 
